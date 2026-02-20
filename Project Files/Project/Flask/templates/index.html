@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flood Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body class="predict-bg">
+
+    <div class="navbar">
+        <h2>Floods Prediction</h2>
+        <a href="/">Home</a>
+        <a href="/predict">Predict Flood</a>
+    </div>
+
+    <div class="form-container">
+    <div class="form-box">
+        <form action="/data_predict" method="POST">
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Cloud Cover</label>
+                    <input type="number" name="temp" step="any" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Annual Rain Fall</label>
+                    <input type="number" name="Hum" step="any" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Jan-Feb Rainfall</label>
+                    <input type="number" name="db" step="any" required>
+                </div>
+
+                <div class="input-group">
+                    <label>June-September</label>
+                    <input type="number" name="aa1" step="any" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>March-May Rainfall</label>
+                    <input type="number" name="ap" step="any" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Predict</button>
+
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flood Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h2>Floods Prediction</h2>
+        <div>
+            <a href="/">Home</a>
+            <a href="/predict">Predict Flood</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <img src="{{ url_for('static', filename='images/floods.jpg') }}" class="bg-image">
+
+        <div class="overlay">
+            <h1>Flood Prediction Using Machine Learning</h1>
+            <p>Click below to start prediction</p>
+            <a href="/predict" class="btn">Start Prediction</a>
+
+        </div>
+    </div>
+
+</body>
+</html>
